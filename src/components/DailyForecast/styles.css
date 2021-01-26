@@ -1,0 +1,38 @@
+.date {
+    padding: var(--gap);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: var(--border-radius);
+    border: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.date.active {
+    border-color: #fff;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+img {
+    width: max(40px, 7.5%);
+    position: absolute;
+    top: 50%;
+    right: var(--gap);
+    transform: translateY(-50%);
+}
+
+p {
+    margin-bottom: 0.25rem;
+}
+
+button {
+    background: unset;
+    border: unset;
+    outline: unset;
+    padding: 0;
+    font-size: 0.85rem;
+    text-decoration: underline;
+}

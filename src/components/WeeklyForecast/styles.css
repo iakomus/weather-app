@@ -1,0 +1,33 @@
+.weekly-forecast-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-size: cover;
+    background-position: center;
+    overflow: auto;
+}
+
+.weekly-forecast {
+    width: min(80%, 1000px);
+    margin: auto;
+    border: 2px solid #333;
+    border-radius: var(--border-radius);
+    padding: calc(var(--gap) * 4);
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.daily-forecast {
+    display: grid;
+    gap: var(--gap);
+
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(clamp(20% - var(--gap), (700px - 100%) * 999, 100%), 1fr)
+    );
+}
+
+h1 {
+    color: #fff;
+}
